@@ -298,7 +298,7 @@ function Content() {
                 <img
                   className="h-full w-auto lg:w-full "
                   src="\images\happy-confident-customers-2021-09-04-15-44-24-utc.png"
-                  alt=""
+                  alt="happy"
                 />
               </div>
             </div>
