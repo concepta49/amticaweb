@@ -3,11 +3,35 @@ import { IoChevronDownOutline } from "react-icons/io5";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { HiX } from "react-icons/hi";
 import { Drawer } from "antd";
+import { DownOutlined } from "@ant-design/icons";
+import { Dropdown, Menu, Space } from "antd";
 
 function Navigations() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const handleToggle = () => setIsNavExpanded(!isNavExpanded);
- 
+
+  const menu = (
+    <Menu
+      items={[
+        {
+          key: "1",
+          type: "group",
+          label: "Group title",
+          children: [
+            {
+              key: "1-1",
+              label: "1st menu item",
+            },
+            {
+              key: "1-2",
+              label: "2nd menu item",
+            },
+          ],
+        },
+      ]}
+    />
+  );
+
   // console.log(isNavExpanded)
 
   return (
@@ -80,19 +104,29 @@ function Navigations() {
               </button>
             </a>
           </div>
+
           <AiOutlineMenuFold
             size={30}
             color="white"
             onClick={handleToggle}
             className="lg:hidden"
           />
-         
-          <Drawer width="100%" visible={isNavExpanded}  onClose={handleToggle}  placement="left">
-
+          <Drawer
            
-           
-            <div className="grid  place-items-center">
-            <img className="grid items-center  " src="/images/logo.png"  />
+            width="100%"
+            visible={isNavExpanded}
+            placement="right"
+            onClose={handleToggle}
+            extra={
+              
+             
+             
+          <img className="mr-20" src="/images/logo.png"/>
+              
+            }
+          >
+            <div className="grid text-xl place-items-center ">
+       
               <ul className="mt-4 lg:hidden font-bold text-gray-600">
                 <li className="mt-1">
                   <a className="py-2" href="">
@@ -133,26 +167,35 @@ function Navigations() {
           />
           <div className="absolute top-0 w-full bg-gradient-to-r from-[#3f3f46] to-[#3f3f4610]  h-[750px] lg:h-[540px] md:h-[540px]">
             <div className="max-w-3xl mx-auto ">
-              <h1 className="text-[#FFFFFF] mt-20 font-bold text-[20px] lg:text-[50px] text-center ">
+              <h1 className="text-[#FFFFFF] mt-20 font-bold text-[26px] lg:text-[50px] text-center ">
                 Find a Service or Product at one shop
               </h1>
             </div>
 
             <div className="mt-20 max-w-[1340px] mx-auto items-center grid lg:grid-cols-3 grid-cols-1 lg:mt-6">
-              <div className="lg:col-span-2 lg: lg:ml-20  md:items-center md:text-sm ml-2 mr-2 gap-3 ">
-                <h1 className="text-[#0F172A] bg-white p-4 rounded-lg lg:text-left text-center lg-px-[10px] px-[4px] lg:text-lg font-[Poppins] lg:pl-4">
+              <div className="lg:col-span-2 lg: lg:ml-20  md:items-center md:text-sm ml-4 mr-4 gap-3 ">
+                <h1 className="text-[#0F172A] bg-white p-3 lg:p-4 rounded-lg lg:text-left text-center lg-px-[10px] px-[4px] lg:text-lg font-[Poppins] lg:pl-4">
                   Search a service or product....
                 </h1>
               </div>
               <div className="lg:flex mx-auto mt-4 gap-3 w-full lg:ml-4 ">
-                <div className="lg:flex mb-4 ml-2 mr-2 text-[#0F172A] bg-white lg:p-4 rounded-lg lg:text-left text-center px-[42px] lg:text-lg font-[Poppins] lg:pl-4">
-                  All departments
-                  <div className="flex lg:justify-end justify-end  ">
-                    <IoChevronDownOutline color="#84CC16" size={30} />
-                  </div>
+                <div className="lg:flex mb-4 ml-4 mr-4 text-[#0F172A] bg-white lg:p-4 p-3 rounded-lg lg:text-left text-center px-[42px] lg:text-lg font-[Poppins] lg:pl-4">
+                  <Dropdown overlay={menu}>
+                    <a onClick={(e) => e.preventDefault()}>
+                      <Space>
+                        All departments
+                        <IoChevronDownOutline color="#84CC16" size={25} />
+                      </Space>
+                    </a>
+                  </Dropdown>
                 </div>
-                <div className="mt-3 lg:mt-0 w-full lg:w-1/3 gap-3  ">
-                  <button className=" bg-[#84CC16] border-[#84CC16] px-[32px] rounded-lg p-3 w-full  mr-2">
+
+                {/* <div className="flex lg:justify-end justify-end  ">
+                    <IoChevronDownOutline color="#84CC16" size={30} />
+                  </div> */}
+
+                <div className="mt-3 lg:mt-0  ml-4 gap-3 mr-4 ">
+                  <button className=" bg-[#84CC16] border-[#84CC16] lg:px-[32px] rounded-lg p-4 w-full ">
                     <h1 className="text-white text-center text-sm lg:text-lg font-[Poppins]">
                       Search
                     </h1>
@@ -160,8 +203,8 @@ function Navigations() {
                 </div>
               </div>
             </div>
-            <div className="mt-20">
-              <p className="lg:mt-6 lg:text-lg  text-sm text-center  text-[#FFFFFF] ">
+            <div className="">
+              <p className="lg:mt-10 mt-20 lg:text-lg lg:pb-4 text-sm text-center  text-[#FFFFFF] ">
                 Here companions instrument set estimating sex remarkably
                 solicitude motionless. Property men
                 <br />

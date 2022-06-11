@@ -1,11 +1,12 @@
 import React from "react";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { DownOutlined } from "@ant-design/icons";
+import { Dropdown, Menu, Space } from "antd";
 
 function Middle() {
   return (
     <div>
       <section className="bg-[#F3F4F6] py-[100px] pb-28 pt-28">
-        <div className="max-w-[1440px] w-full mx-auto px-3 ">
+        <div className="max-w-[1240px] w-full mx-auto px-3 ">
           <h3 className="text-[#0F172A] font-bold lg:text-[36px]  text-center text-3xl ">
             Our Partner
           </h3>
@@ -43,7 +44,7 @@ function Middle() {
         </div>
       </section>
       <section className="bg-[#F3F4F6] py-[100px] pb-28 lg:pt-20 w-full pt-12 ">
-        <div className="max-w-[1440px] mx-auto ">
+        <div className="max-w-[1240px] mx-auto ">
           <div className="bg-[#84cc16] rounded-[20px] items-center h-[400px]">
             <div className="mt-4 ">
               <h2 className="lg:text-4xl text-xl pt-16 text-[#0F172A] text-center">
@@ -61,7 +62,6 @@ function Middle() {
                 </h1>
               </div>
               <div className="w-full mt-4 md:text-sm">
-             
                 <button className="flex  bg-[#0F172A] lg:rounded-lg p-4 w-full lg:w-1/2 ">
                   <h1 className="text-white text-center text-sm lg:text-lg font-[Poppins] w-full ">
                     Subscribe

@@ -40,7 +40,7 @@ function Content() {
   return (
     <div>
       <section className="bg-[#F3F4F6] font-Poppins py-[100px] pb-28 pt-20">
-        <div className="max-w-[1240px] w-full mx-auto px-3">
+        <div className="max-w-[1240px] w-full mx-auto p-6">
           <h3 className="text-[#0F172A] font-bold lg:text-[36px] text-xl text-center ">
             Pick the suitable solution
           </h3>
@@ -54,7 +54,7 @@ function Content() {
                 <h2 className="font-bold mt-2 lg:text-[24px] text-sm text-[#0F172A] ">
                   Services
                 </h2>
-                <p className="lg:text-[16px] mt-2 text-sm font-[Poppins] text-[#0F172A] ">
+                <p className="lg:text-[16px] mt-2 text-lg font-[Poppins] text-[#0F172A] pb-10">
                   Looking venture justice in evident in totally he do ability.
                   Be is lose girl long of up give.
                 </p>
@@ -65,10 +65,10 @@ function Content() {
                 <a className=" text-[#84CC16] lg:text-[16px] text-sm mt-2 ">
                   BUY & SELL
                 </a>
-                <h2 className="font-bold lg:text-[24px] text-sm text-[#0F172A] mt-2 ">
+                <h2 className="font-bold lg:text-[24px] text-lg text-[#0F172A] mt-2 ">
                   Products
                 </h2>
-                <p className="mt-2 lg:text-[16px] text-sm font-[Poppins] text-[#0F172A]">
+                <p className="mt-2 lg:text-[16px] text-lg font-[Poppins] text-[#0F172A]">
                   Looking venture justice in evident in totally he do ability.
                   Be is lose girl long of up give.
                 </p>
@@ -82,7 +82,7 @@ function Content() {
                 <h2 className="font-bold lg:text-[24px] text-sm text-[#0F172A] mt-2">
                   Jobs
                 </h2>
-                <p className="lg:text-[16px] text-sm font-[Poppins] text-[#0F172A] mt-2">
+                <p className="lg:text-[16px] text-lg font-[Poppins] text-[#0F172A] mt-2">
                   Looking venture justice in evident in totally he do ability.
                   Be is lose girl long of up give.
                 </p>
@@ -90,7 +90,7 @@ function Content() {
             </div>
             <div className="flex flex-col items-center md:items-start bg-[#84CC16] w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
               <div className=" relativ mx-auto mt-4 text-lg lg:text-2xl text-center">
-                <div className="max-w-3xl w-full mx-auto lg:mt-6  h-full">
+                <div className="max-w-3xl w-full mx-auto lg:mt-10  h-full">
                   <h1 className="text-[#FFFFFF] lg:text-[24px] text-lg ">
                     All{" "}
                   </h1>

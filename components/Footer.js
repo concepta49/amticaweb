@@ -1,8 +1,10 @@
 import React from "react";
-import { AiOutlineFacebook,AiOutlineInstagram ,AiOutlineLinkedin ,AiFillTwitterCircle } from "react-icons/ai";
-
-
-
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
 
 function Footer() {
   return (
@@ -14,33 +16,66 @@ function Footer() {
             Best Sellers
           </h4>
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[16px] text-[#0F172A]">
-            <a href="/"> Nike shoes</a>
-            <a href="/"> Adidass hoodie</a>
-            <a href="/"> Long sleeve sweater</a>
-            <a href="/"> Long sleeve sweater</a>
-            <a href="/"> Strong stone helmet</a>
+            <ul className="">
+              <li className="mt-">
+                <a href="/"> Nike shoes</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Adidass hoodie</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Long sleeve sweater</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Long sleeve sweater</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Strong stone helmet</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="col-span-4 lg:col-span-1">
           <h4 className="font-bold text-[#84CC16] text-[18px]">
-            {" "}
             Popular Services
           </h4>
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[16px] text-[#0F172A]">
-            <a href="/"> Plumber</a>
-            <a href="/"> Electrecian</a>
-            <a href="/"> Welder</a>
-            <a href="/"> Carpenter</a>
-            <a href="/"> Cleaning</a>
+            <ul className="">
+              <li className="mt-">
+                <a href="/"> Plumber</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Electrecian</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Welder</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Carpenter</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Cleaning</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="col-span-4 lg:col-span-1">
           <h4 className="font-bold text-[#84CC16] text-[18px]">Company</h4>
           <div className="mt-5 flex flex-col space-y-[10px] font-medium text-[16px]   text-[#0F172A]">
-            <a href="/"> About us</a>
-            <a href="/"> Faq</a>
-            <a href="/"> Services</a>
-            <a href="/"> Jobs</a>
+            <ul className="">
+              <li className="mt-">
+                <a href="/"> About us</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Faq</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Services</a>
+              </li>
+              <li className="mt-2">
+                <a href="/"> Jobs</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="col-span-4 lg:col-span-1">
