@@ -37,9 +37,9 @@ function Navigations() {
   return (
     <div>
       <section className="bg-[#0F172A] lg:mx-auto">
-        <header className="relative max-w-[1740px] px-3 py-2  lg:mx-auto flex justify-between items-center">
+        <header className="relative max-w-[1740px] px-3 py-4 lg:p-2  lg:mx-auto flex justify-between items-center">
           <h1
-            className="lg:text-5xl text-3xl md:text-3xl font-bold text-white font-[Raleway]"
+            className="lg:text-5xl text-4xl md:text-3xl font-bold text-white font-[Raleway]"
             href="index.html"
           >
             a<span className="text-[#84cc16]">mtica</span>
@@ -104,6 +104,7 @@ function Navigations() {
               </button>
             </a>
           </div>
+          
 
           <AiOutlineMenuFold
             size={30}
@@ -121,7 +122,7 @@ function Navigations() {
               
              
              
-          <img className="mr-20" src="/images/logo.png"/>
+          <img className=" justify-center" src="/images/logo.png"/>
               
             }
           >
@@ -167,7 +168,7 @@ function Navigations() {
           />
           <div className="absolute top-0 w-full bg-gradient-to-r from-[#3f3f46] to-[#3f3f4610]  h-[750px] lg:h-[540px] md:h-[540px]">
             <div className="max-w-3xl mx-auto ">
-              <h1 className="text-[#FFFFFF] mt-20 font-bold text-[26px] lg:text-[50px] text-center ">
+              <h1 className="text-[#FFFFFF] mt-20 font-bold text-[36px] lg:text-[50px] text-center ">
                 Find a Service or Product at one shop
               </h1>
             </div>
@@ -178,7 +179,7 @@ function Navigations() {
                   Search a service or product....
                 </h1>
               </div>
-              <div className="lg:flex mx-auto mt-4 gap-3 w-full lg:ml-4 ">
+              <div className="lg:flex mx-auto lg;mt-4 mt-6 gap-3 w-full lg:ml-4 ">
                 <div className="lg:flex mb-4 ml-4 mr-4 text-[#0F172A] bg-white lg:p-4 p-3 rounded-lg lg:text-left text-center px-[42px] lg:text-lg font-[Poppins] lg:pl-4">
                   <Dropdown overlay={menu}>
                     <a onClick={(e) => e.preventDefault()}>
@@ -194,7 +195,7 @@ function Navigations() {
                     <IoChevronDownOutline color="#84CC16" size={30} />
                   </div> */}
 
-                <div className="mt-3 lg:mt-0  ml-4 gap-3 mr-4 ">
+                <div className="mt-6 lg:mt-0  ml-4 gap-3 mr-4 ">
                   <button className=" bg-[#84CC16] border-[#84CC16] lg:px-[32px] rounded-lg p-4 w-full ">
                     <h1 className="text-white text-center text-sm lg:text-lg font-[Poppins]">
                       Search
@@ -204,7 +205,7 @@ function Navigations() {
               </div>
             </div>
             <div className="">
-              <p className="lg:mt-10 mt-20 lg:text-lg lg:pb-4 text-sm text-center  text-[#FFFFFF] ">
+              <p className="lg:mt-10 mt-20 lg:text-lg lg:pb-4 text-lg text-center  text-[#FFFFFF] ">
                 Here companions instrument set estimating sex remarkably
                 solicitude motionless. Property men
                 <br />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Col, Divider, Row } from 'antd';
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Menu, Space } from "antd";
 
@@ -44,25 +45,26 @@ function Middle() {
         </div>
       </section>
       <section className="bg-[#F3F4F6] py-[100px] pb-28 lg:pt-20 w-full pt-12 ">
-        <div className="max-w-[1240px] mx-auto ">
-          <div className="bg-[#84cc16] rounded-[20px] items-center h-[400px]">
-            <div className="mt-4 ">
-              <h2 className="lg:text-4xl text-xl pt-16 text-[#0F172A] text-center">
+        <div className="lg:max-w-[1240px] max-w-[250px] mx-auto ">
+          <div className="bg-[#84cc16] rounded-[20px] items-center lg:h-[400px] h-[300px]">
+            <div className="mt-4  place-items-center">
+              <h2 className="lg:text-4xl text-2xl pt-16 text-[#0F172A] text-center">
                 Join us for future updates
               </h2>
+             
               <div className="flex justify-center w-full mt-2">
                 <hr className="border-1 bg-[white] border-[white] w-[103px]" />
               </div>
             </div>
 
-            <div className="grid lg:grid-cols-3 grid-col-2 mt-12 ml-4 mr-4">
-              <div className="lg:col-span-2 lg:mt-4 lg:ml-20 lg:px-[22px] md:items-center md:text-sm">
-                <h1 className="text-[#0F172A] bg-white p-4 lg:rounded-lg lg:text-left lg-px-[10px] px-[4px] lg:text-lg text-center font-[Poppins] lg:pl-14">
+            <div className="grid lg:grid-cols-3 grid-col-2 mt-12 ml-4 mr-4 lg:ml-0 lg:mr-0 place-items-center">
+              <div className="lg:col-span-2 lg:mt-4 w-full lg:w-3/5  md:items-center md:text-sm  bg-white rounded-lg lg:text-left  lg:text-lg text-center font-[Poppins] p-4 ">
+                <h1 className="text-[#0F172A]  ">
                   Enter your email address
                 </h1>
               </div>
-              <div className="w-full mt-4 md:text-sm">
-                <button className="flex  bg-[#0F172A] lg:rounded-lg p-4 w-full lg:w-1/2 ">
+              <div className="w-full mt-4 md:text-sm lg:w-2/5 ">
+                <button className="bg-[#0F172A] rounded-lg p-4 w-full lg:w-full ">
                   <h1 className="text-white text-center text-sm lg:text-lg font-[Poppins] w-full ">
                     Subscribe
                   </h1>
@@ -72,6 +74,7 @@ function Middle() {
           </div>
         </div>
       </section>
+      
     </div>
   );
 }

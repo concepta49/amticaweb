@@ -1,5 +1,6 @@
 import React from "react";
 import { HiChevronRight } from "react-icons/hi";
+import Image from 'next/image'
 import { AiFillStar } from "react-icons/ai";
 import Card from "./Card";
 
@@ -265,7 +266,7 @@ function Content() {
           <div className=" mx-auto sm:px-28  ">
             <div className="flex flex-wrap h-full container mx-auto max-w-[1840px]">
               <div className="w-full  order-2 lg:order-1 lg:w-1/2  mt=4 ">
-                <div className="ml-2 mr-2 lg:mt-16">
+                <div className="ml-2 mr-2 lg:mt-16 mt-2">
                   <h2 className="lg:text-[36px] text-2xl text-white font-bold text-center lg:text-left pt-16 lg:ml-20">
                     What we do at <span className="text-[#84CC16]">amtica</span>
                     ?
@@ -288,13 +289,13 @@ function Content() {
                   </p>
                   </div>
                   <div className="mt-4 lg:ml-20 lg:pb-5 pb-12 p-3">
-                    <button className="mt-4 w-full py-[10px] lg:w-1/2 bg-[#84CC16] border-[#84CC16] border-4 lg:rounded-lg text-[#FFFFFF] lg:text-lg">
+                    <button className="mt-4 w-full py-[10px] lg:w-1/2 bg-[#84CC16] border-[#84CC16] border-4 rounded-lg text-[#FFFFFF] lg:text-lg">
                       Learn More
                     </button>
                   </div>
                 
               </div>
-              <div className="flex mt-4 lg:mt-0 mx-auto   h-full order-1  lg:order-2 w-1/2   ">
+              <div className="hidden lg:flex mt-4 lg:mt-0 mx-auto   h-full order-1  lg:order-2 w-1/2   ">
                 <img
                   className="h-full w-auto lg:w-full "
                   src="\images\happy-confident-customers-2021-09-04-15-44-24-utc.png"

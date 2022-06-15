@@ -1,4 +1,5 @@
 import { HiChevronRight } from "react-icons/hi";
+import Image from 'next/image'
 
 
 export default function Card({title,description,image}) {
@@ -6,7 +7,14 @@ export default function Card({title,description,image}) {
     
       <div className="items-center  md:items-start bg-white max-w-[1340px] p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
               <div className="text-left ">
-                <image className="" src={image} />
+              <Image
+   
+      src={image}
+      layout="responsive"
+      alt=""
+      width={500}
+      height={500}
+    />
                 <h1 className="mt-3 font-bold text-[#0F172A] lg:text-[22px] text-lg">
                   {title}
                 </h1>
