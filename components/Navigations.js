@@ -5,6 +5,7 @@ import { HiX } from "react-icons/hi";
 import { Drawer } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Menu, Space } from "antd";
+import Image from 'next/image'
 import Link from "next/link";
 
 function Navigations() {
@@ -46,7 +47,7 @@ function Navigations() {
             a<span className="text-[#84cc16]">mtica</span>
           </h1>
 
-          <ul className="flex text-white ">
+          <ul className="hidden lg:flex justify-center  ">
             <li className="mx-4 my-6 md:my-0">
               <Link href="/">
                 <a
@@ -63,12 +64,40 @@ function Navigations() {
                   href="#"
                   className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
                 >
-                  SERVICES
+                  PRODUCTS
                 </a>
               </Link>
             </li>
-
-          
+            <li className="mx-4 my-6 md:my-0">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                >
+                  JOBS{" "}
+                </a>
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                >
+                  ABOUT
+                </a>
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                >
+                  FAQ
+                </a>
+              </Link>
+            </li>
           </ul>
 
           <div className="hidden lg:flex mp-4">
@@ -99,53 +128,84 @@ function Navigations() {
             visible={isNavExpanded}
             placement="right"
             onClose={handleToggle}
-            extra={<img className=" justify-center" src="/images/logo.png" />}
+            extra={ <Image
+              className=""
+              src="/images/logo.png"
+              alt="Pic"
+              width={120}
+              height={50}
+            />}
           >
-            {/* <div className="grid text-xl place-items-center ">
-       
+            <div className="grid text-xl place-items-center ">
               <ul className="mt-4 lg:hidden font-bold text-gray-600">
-                <li className="mt-1">
-                  <li>
-        <Link href="/">
-          <a className="py-2" href="">SERVICES</a>
-        </Link>
-      </li>
-                </li>
-                <li className="mt-1">
-                <Link href="/">
-          <a className="py-2" href=""> PRODUCTS</a>
-        </Link>
-                  
-                </li>
-                <li className="mt-1">
-                <Link href="/">
-          <a className="py-2" href="">  JOBS</a>
-        </Link>
-                  
-                </li>
-                <li className="mt-1">
-                <Link href="/">
-          <a className="py-2" href="">  ABOUT</a>
-        </Link>
-                  
-                </li>
-                <li className="mt-1">
-                <Link href="/">
-          <a className="py-2" href="">  F</a>
-        </Link>
-                </li>
+                <ul className=" lg:flex justify-center  ">
+                  <li className="mx-4 my-6 md:my-0">
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                      >
+                        SERVICES
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mx-4 my-6 md:my-0">
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                      >
+                        PRODUCTS
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mx-4 my-6 md:my-0">
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                      >
+                        JOBS{" "}
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mx-4 my-6 md:my-0">
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                      >
+                        ABOUT
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mx-4 my-6 md:my-0">
+                    <Link href="/">
+                      <a
+                        href="#"
+                        className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
+                      >
+                        FAQ
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
               </ul>
-            </div> */}
+            </div>
           </Drawer>
         </header>
       </section>
 
       <section className="relative flex w-full ">
         <div className="w-full relative h-[750px] lg:h-[540px] md:h-[540px] lg:text-center  text-left   ">
-          <img
-            src="\images\bg.png"
+        <Image
             className="h-[750px] lg:h-[540px] md:h-[540px] w-full object-cover  z-0"
+            src="/images/bg.png"
+            alt="Pic"
+            layout="fill"
+           
           />
+         
           <div className="absolute top-0 w-full bg-gradient-to-r from-[#3f3f46] to-[#3f3f4610]  h-[750px] lg:h-[540px] md:h-[540px]">
             <div className="max-w-3xl mx-auto ">
               <h1 className="text-[#FFFFFF] mt-20 font-bold text-[36px] lg:text-[50px] text-center ">
@@ -153,13 +213,13 @@ function Navigations() {
               </h1>
             </div>
 
-            <div className="mt-20 max-w-[1340px] mx-auto items-center grid lg:grid-cols-3 grid-cols-1 lg:mt-6">
+            <div className="mt-20 max-w-[1340px] mx-auto items-center grid lg:grid-cols-3 grid-cols-1 lg:mt-4">
               <div className="lg:col-span-2 lg: lg:ml-20  md:items-center md:text-sm ml-4 mr-4 gap-3 ">
                 <h1 className="text-[#0F172A] bg-white p-3 lg:p-4 rounded-lg lg:text-left text-center lg-px-[10px] px-[4px] lg:text-lg font-[Poppins] lg:pl-4">
                   Search a service or product....
                 </h1>
               </div>
-              <div className="lg:flex mx-auto lg;mt-4 mt-6 gap-3 w-full lg:ml-4 ">
+              <div className="lg:flex mx-auto lg:mt-4 mt-6 gap-3 w-full lg:ml-4 ">
                 <div className="lg:flex mb-4 ml-4 mr-4 text-[#0F172A] bg-white lg:p-4 p-3 rounded-lg lg:text-left text-center px-[42px] lg:text-lg font-[Poppins] lg:pl-4">
                   <Dropdown overlay={menu}>
                     <a onClick={(e) => e.preventDefault()}>

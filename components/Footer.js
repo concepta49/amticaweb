@@ -3,49 +3,44 @@ import React from "react";
 import {
   AiOutlineFacebook,
   AiOutlineInstagram,
-  AiOutlineLinkedin,
   AiFillTwitterCircle,
+  AiFillLinkedin,
 } from "react-icons/ai";
+import Image from "next/image";
 
 function Footer() {
   return (
     <section className="bg-white mt-8">
       <div className="px-3 max-w-[1740px] mx-auto mt-[75px] grid grid-cols-4 gap-y-6">
         <div className="col-span-4 lg:col-span-1">
-          <h4 className="font-bold text-[#84CC16] text-[18px]">
-            {" "}
-            Best Sellers
+          <h4 className="font-bold text-[#84CC16] text-[18px] text-left">
+            Popular Services
           </h4>
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[16px] text-[#0F172A]">
-            <ul className="">
-              <li className="mt-">
-                <Link>
-                  {" "}
-                  <a href="/"> Nike shoes</a>
+            <ul className="mt-3 justify-center  ">
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Nike shoes</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  {" "}
-                  <a href="/"> Adidass hoodie</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a> Adidass hoodie</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  {" "}
-                  <a href="/"> Long sleeve sweater</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Long sleeve sweater</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  {" "}
-                  <a href="/"> Long sleeve sweater</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Long sleeve sweater</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  {" "}
-                  <a href="/"> Strong stone helmet</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Strong stone helmet</a>
                 </Link>
               </li>
             </ul>
@@ -56,31 +51,25 @@ function Footer() {
             Popular Services
           </h4>
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[16px] text-[#0F172A]">
-            <ul className="">
-              <li className="mt-">
-                <Link>
-                  <a href="/"> Plumber</a>
+            <ul className="mt-3 justify-center  ">
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Plumber</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  <a href="/"> Electrecian</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Welder</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  <a href="/"> Welder</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Carpenter</a>
                 </Link>
               </li>
-              <li className="mt-2">
-                <Link>
-                  <a href="/"> Carpenter</a>
-                </Link>
-              </li>
-              <li className="mt-2">
-                <Link>
-                  {" "}
-                  <a href="/"> Cleaning</a>
+              <li className="mx-4 my-6 md:my-0">
+                <Link href="/">
+                  <a>Cleaning</a>
                 </Link>
               </li>
             </ul>
@@ -89,23 +78,23 @@ function Footer() {
         <div className="col-span-4 lg:col-span-1">
           <h4 className="font-bold text-[#84CC16] text-[18px]">Company</h4>
           <div className="mt-5 flex flex-col space-y-[10px] font-medium text-[16px]   text-[#0F172A]">
-            <ul className="">
-              <li className="mt-">
+            <ul className=" justify-center  ">
+              <li className="mx-4 my-6 md:my-0">
                 <Link href="/">
                   <a>About us</a>
                 </Link>
               </li>
-              <li className="mt-2">
+              <li className="mx-4 my-6 md:my-0">
                 <Link href="/">
                   <a>Faq</a>
                 </Link>
               </li>
-              <li className="mt-2">
+              <li className="mx-4 my-6 md:my-0">
                 <Link href="/">
                   <a>Services</a>
                 </Link>
               </li>
-              <li className="mt-2">
+              <li className="mx-4 my-6 md:my-0">
                 <Link href="/">
                   <a>Jobs</a>
                 </Link>
@@ -114,48 +103,47 @@ function Footer() {
           </div>
         </div>
         <div className="col-span-4 lg:col-span-1">
-          <img src="\images\logo.png" />
+          <Image
+            src="/images/logo.png"
+            alt="Picture of the author"
+            width={150}
+            height={30}
+          />
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[18px] text-[#0F172A]">
             <p className="text-black mt-3 text-sm">
               Selfish fearful chaos war prejudice pinnacle free victorious
               spirit disgust superiority reason eternal-return suicide.
               <br /> Horror grandeur abstract of contradict ultimate insofar
               against strong sea free reason free play.
-              <br />
-              <Link>
-                {" "}
-                <a href="mailto:contact@gmail.com">contact@gmail.com</a>
-              </Link>
+              <ul className="flex mt-4">
+                <li className="p-2 bg-white shadow rounded  mx-1">
+                  <Link href="/">
+                    <AiFillTwitterCircle fontSize="28px" />
+                  </Link>
+                </li>
+                <li className="p-2 bg-white shadow rounded  mx-1">
+                  <Link href="/">
+                    <a className="text-gray-500" href="">
+                      <AiOutlineFacebook fontSize="28px" />
+                    </a>
+                  </Link>
+                </li>
+                <li className="p-2 bg-white shadow rounded  mx-1">
+                  <Link href="/">
+                    <a className="text-gray-500" href="">
+                      <AiOutlineInstagram fontSize="28px" />
+                    </a>
+                  </Link>
+                </li>
+                <li className="p-2 bg-white shadow rounded  mx-1">
+                  <Link href="/">
+                    <a className="text-gray-500" href="">
+                      <AiFillLinkedin fontSize="28px" />
+                    </a>
+                  </Link>
+                </li>
+              </ul>
             </p>
-            <ul className="flex mt-4">
-              <li className="p-2 bg-white shadow rounded  mx-1">
-                <AiOutlineFacebook fontSize="28px" />
-              </li>
-              <li className="p-2 bg-white shadow rounded  mx-1">
-                <Link>
-                  {" "}
-                  <a className="text-gray-500" href="">
-                    <AiOutlineInstagram fontSize="28px" />
-                  </a>
-                </Link>
-              </li>
-              <li className="p-2 bg-white shadow rounded  mx-1">
-                <Link>
-                  {" "}
-                  <a className="text-gray-500" href="">
-                    <AiOutlineInstagram fontSize="28px" />
-                  </a>
-                </Link>
-              </li>
-              <li className="p-2 bg-white shadow rounded  mx-1">
-                <Link>
-                  {" "}
-                  <a className="text-gray-500" href="">
-                    <AiOutlineInstagram fontSize="28px" />
-                  </a>
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
