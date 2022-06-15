@@ -104,7 +104,6 @@ function Navigations() {
               </button>
             </a>
           </div>
-          
 
           <AiOutlineMenuFold
             size={30}
@@ -113,46 +112,54 @@ function Navigations() {
             className="lg:hidden"
           />
           <Drawer
-           
             width="100%"
             visible={isNavExpanded}
             placement="right"
             onClose={handleToggle}
-            extra={
-              
-             
-             
-          <img className=" justify-center" src="/images/logo.png"/>
-              
-            }
+            extra={<img className=" justify-center" src="/images/logo.png" />}
           >
             <div className="grid text-xl place-items-center ">
-       
               <ul className="mt-4 lg:hidden font-bold text-gray-600">
                 <li className="mt-1">
-                  <a className="py-2" href="">
-                    Home
-                  </a>
+                  <li>
+                    <Link href="/">
+                      <a className="py-2" href="">
+                        SERVICES
+                      </a>
+                    </Link>
+                  </li>
                 </li>
                 <li className="mt-1">
-                  <a className="py-2" href="">
-                    About
-                  </a>
+                  <Link href="/">
+                    <a className="py-2" href="">
+                      {" "}
+                      PRODUCTS
+                    </a>
+                  </Link>
                 </li>
                 <li className="mt-1">
-                  <a className="py-2" href="">
-                    Services
-                  </a>
+                  <Link href="/">
+                    <a className="py-2" href="">
+                      {" "}
+                      JOBS
+                    </a>
+                  </Link>
                 </li>
                 <li className="mt-1">
-                  <a className="py-2" href="">
-                    Portfolio
-                  </a>
+                  <Link href="/">
+                    <a className="py-2" href="">
+                      {" "}
+                      ABOUT
+                    </a>
+                  </Link>
                 </li>
                 <li className="mt-1">
-                  <a className="py-2" href="">
-                    Contact
-                  </a>
+                  <Link href="/">
+                    <a className="py-2" href="">
+                      {" "}
+                      FAQ
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>

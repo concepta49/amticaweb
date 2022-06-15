@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   AiOutlineFacebook,
@@ -18,19 +19,34 @@ function Footer() {
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[16px] text-[#0F172A]">
             <ul className="">
               <li className="mt-">
-                <a href="/"> Nike shoes</a>
+                <Link>
+                  {" "}
+                  <a href="/"> Nike shoes</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Adidass hoodie</a>
+                <Link>
+                  {" "}
+                  <a href="/"> Adidass hoodie</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Long sleeve sweater</a>
+                <Link>
+                  {" "}
+                  <a href="/"> Long sleeve sweater</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Long sleeve sweater</a>
+                <Link>
+                  {" "}
+                  <a href="/"> Long sleeve sweater</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Strong stone helmet</a>
+                <Link>
+                  {" "}
+                  <a href="/"> Strong stone helmet</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -42,19 +58,30 @@ function Footer() {
           <div className="mt-3 flex flex-col space-y-[10px] font-medium text-[16px] text-[#0F172A]">
             <ul className="">
               <li className="mt-">
-                <a href="/"> Plumber</a>
+                <Link>
+                  <a href="/"> Plumber</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Electrecian</a>
+                <Link>
+                  <a href="/"> Electrecian</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Welder</a>
+                <Link>
+                  <a href="/"> Welder</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Carpenter</a>
+                <Link>
+                  <a href="/"> Carpenter</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Cleaning</a>
+                <Link>
+                  {" "}
+                  <a href="/"> Cleaning</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -64,16 +91,24 @@ function Footer() {
           <div className="mt-5 flex flex-col space-y-[10px] font-medium text-[16px]   text-[#0F172A]">
             <ul className="">
               <li className="mt-">
-                <a href="/"> About us</a>
+                <Link href="/">
+                  <a>About us</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Faq</a>
+                <Link href="/">
+                  <a>Faq</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Services</a>
+                <Link href="/">
+                  <a>Services</a>
+                </Link>
               </li>
               <li className="mt-2">
-                <a href="/"> Jobs</a>
+                <Link href="/">
+                  <a>Jobs</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -87,26 +122,38 @@ function Footer() {
               <br /> Horror grandeur abstract of contradict ultimate insofar
               against strong sea free reason free play.
               <br />
-              <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+              <Link>
+                {" "}
+                <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+              </Link>
             </p>
             <ul className="flex mt-4">
               <li className="p-2 bg-white shadow rounded  mx-1">
                 <AiOutlineFacebook fontSize="28px" />
               </li>
               <li className="p-2 bg-white shadow rounded  mx-1">
-                <a className="text-gray-500" href="">
-                  <AiOutlineInstagram fontSize="28px" />
-                </a>
+                <Link>
+                  {" "}
+                  <a className="text-gray-500" href="">
+                    <AiOutlineInstagram fontSize="28px" />
+                  </a>
+                </Link>
               </li>
               <li className="p-2 bg-white shadow rounded  mx-1">
-                <a className="text-gray-500" href="">
-                  <AiOutlineLinkedin fontSize="28px" />
-                </a>
+                <Link>
+                  {" "}
+                  <a className="text-gray-500" href="">
+                    <AiOutlineInstagram fontSize="28px" />
+                  </a>
+                </Link>
               </li>
               <li className="p-2 bg-white shadow rounded  mx-1">
-                <a className="text-gray-500" href="">
-                  <AiFillTwitterCircle fontSize="28px" />
-                </a>
+                <Link>
+                  {" "}
+                  <a className="text-gray-500" href="">
+                    <AiOutlineInstagram fontSize="28px" />
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
