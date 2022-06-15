@@ -119,15 +119,13 @@ function Navigations() {
             extra={<img className=" justify-center" src="/images/logo.png" />}
           >
             <div className="grid text-xl place-items-center ">
-              <ul className="mt-4 lg:hidden font-bold text-gray-600">
+              {/* <ul className="mt-4 lg:hidden font-bold text-gray-600">
                 <li className="mt-1">
-                  
-                    <Link href="/">
-                      <a className="py-2" href="">
-                        SERVICES
-                      </a>
-                    </Link>
-              
+                  <Link href="/">
+                    <a className="py-2" href="">
+                      SERVICES
+                    </a>
+                  </Link>
                 </li>
                 <li className="mt-1">
                   <Link href="/">
@@ -161,7 +159,24 @@ function Navigations() {
                     </a>
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
+               <ul>
+      <li>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/about">
+          <a>About Us</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/blog/hello-world">
+          <a>Blog Post</a>
+        </Link>
+      </li>
+    </ul>
             </div>
           </Drawer>
         </header>
