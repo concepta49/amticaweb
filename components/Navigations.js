@@ -3,7 +3,6 @@ import { IoChevronDownOutline } from "react-icons/io5";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { HiX } from "react-icons/hi";
 import { Drawer } from "antd";
-import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Menu, Space } from "antd";
 import Image from 'next/image'
 import Link from "next/link";
@@ -138,7 +137,7 @@ function Navigations() {
           >
             <div className="grid text-xl place-items-center ">
               <ul className="mt-4 lg:hidden font-bold text-gray-600">
-                <ul className=" lg:flex justify-center  ">
+                <ul className=" lg:flex justify-center ">
                   <li className="mx-4 my-6 md:my-0">
                     <Link href="/">
                       <a
@@ -215,9 +214,11 @@ function Navigations() {
 
             <div className="mt-20 max-w-[1340px] mx-auto items-center grid lg:grid-cols-3 grid-cols-1 lg:mt-4">
               <div className="lg:col-span-2 lg: lg:ml-20  md:items-center md:text-sm ml-4 mr-4 gap-3 ">
+                <form>
                 <h1 className="text-[#0F172A] bg-white p-3 lg:p-4 rounded-lg lg:text-left text-center lg-px-[10px] px-[4px] lg:text-lg font-[Poppins] lg:pl-4">
                   Search a service or product....
                 </h1>
+                </form>
               </div>
               <div className="lg:flex mx-auto lg:mt-4 mt-6 gap-3 w-full lg:ml-4 ">
                 <div className="lg:flex mb-4 ml-4 mr-4 text-[#0F172A] bg-white lg:p-4 p-3 rounded-lg lg:text-left text-center px-[42px] lg:text-lg font-[Poppins] lg:pl-4">
@@ -225,15 +226,11 @@ function Navigations() {
                     <a onClick={(e) => e.preventDefault()}>
                       <Space>
                         All departments
-                        <IoChevronDownOutline color="#84CC16" size={25} />
+                        <IoChevronDownOutline color="#84CC16" size={25}  />
                       </Space>
                     </a>
                   </Dropdown>
                 </div>
-
-                {/* <div className="flex lg:justify-end justify-end  ">
-                    <IoChevronDownOutline color="#84CC16" size={30} />
-                  </div> */}
 
                 <div className="mt-6 lg:mt-0  ml-4 gap-3 mr-4 ">
                   <button className=" bg-[#84CC16] border-[#84CC16] lg:px-[32px] rounded-lg p-4 w-full ">

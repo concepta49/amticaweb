@@ -1,6 +1,5 @@
 import React from "react";
-import { HiChevronRight } from "react-icons/hi";
-import Image from 'next/image'
+import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import Card from "./Card";
 
@@ -51,7 +50,7 @@ function Content() {
           <div className="mt-[52px]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[26px] ">
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
               <div className="text-center">
-                <a className=" text-[#84CC16] lg:text-[16px] text-sm">FIND</a>
+                <h1 className=" text-[#84CC16] lg:text-[16px] text-sm">FIND</h1>
                 <h2 className="font-bold mt-2 lg:text-[24px] text-sm text-[#0F172A] ">
                   Services
                 </h2>
@@ -63,9 +62,9 @@ function Content() {
             </div>
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
               <div className="text-center">
-                <a className=" text-[#84CC16] lg:text-[16px] text-sm mt-2 ">
+                <h1 className=" text-[#84CC16] lg:text-[16px] text-sm mt-2 ">
                   BUY & SELL
-                </a>
+                </h1>
                 <h2 className="font-bold lg:text-[24px] text-lg text-[#0F172A] mt-2 ">
                   Products
                 </h2>
@@ -77,9 +76,9 @@ function Content() {
             </div>
             <div className="flex flex-col items-center  md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out ">
               <div className="text-center">
-                <a className=" text-[#84CC16] lg:text-[16px] text-sm mt-2">
+                <h1 className=" text-[#84CC16] lg:text-[16px] text-sm mt-2">
                   POST
-                </a>
+                </h1>
                 <h2 className="font-bold lg:text-[24px] text-sm text-[#0F172A] mt-2">
                   Jobs
                 </h2>
@@ -131,8 +130,10 @@ function Content() {
           </div>
           <div className="mt-[52px] items:left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-[26px]">
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
-              <img className="" src="\images\11.png" />
-              <h1 className="mt-2 text-[#0F172A] text-center">Clothing & Accesories</h1>
+              <Image src="/images/11.png" alt="l" width={500} height={500} />
+              <h1 className="mt-2 text-[#0F172A] text-center">
+                Clothing & Accesories
+              </h1>
               <h1 className="font-bold text-[#0F172A] lg:text-[24px] text-lg">
                 Nike shoes
               </h1>
@@ -143,13 +144,13 @@ function Content() {
                 <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
-              </div> 
+              </div>
               <p className="mt-2 text-[#0F172A] lg:text-[16px] text-sm lg:text-left text-center">
                 Looking venture justice in evident in totally he do ability.
               </p>
               <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:place-items-start w-full  mx-auto mt-2 text-[#84CC16]">
                 <h2 className="text-lg text-[#84CC16] lg:text-left lg:text-2xl mt-2 p-2 text-center ">
-                $ 120
+                  $ 120
                 </h2>
                 <button className="bg-[#84CC16] text-white rounded-lg lg:text-xl text-lg p-2 mt-2">
                   Add to cart
@@ -157,8 +158,10 @@ function Content() {
               </div>
             </div>
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
-              <img className="" src="\images\22.png" />
-              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">Clothing & Accesories</h1>
+              <Image src="/images/22.png" alt="l" width={500} height={500} />
+              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">
+                Clothing & Accesories
+              </h1>
               <h1 className="font-bold text-[#0F172A] lg:text-[24px] text-lg text-center ">
                 Long sleeve hoo..
               </h1>
@@ -174,7 +177,7 @@ function Content() {
               </p>
               <div className="grid lg:grid-cols-2 grid-cols-1  place-items-center lg:place-items-start w-full  mx-auto mt-2 text-[#84CC16]">
                 <h2 className="text-lg text-[#84CC16] text-left lg:text-2xl mt-2 p-2">
-                $ 90
+                  $ 90
                 </h2>
                 <button className="bg-[#84CC16] text-white rounded-lg lg:text-xl text-lg p-2 mt-2">
                   Add to cart
@@ -182,8 +185,10 @@ function Content() {
               </div>
             </div>
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
-              <img className="" src="\images\33.png" />
-              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">Clothing & Accesories</h1>
+              <Image src="/images/33.png" alt="l" width={500} height={500} />
+              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">
+                Clothing & Accesories
+              </h1>
               <h1 className="font-bold text-[#0F172A] lg:text-[24px] text-lg text-center ">
                 Adidas cap
               </h1>
@@ -199,7 +204,7 @@ function Content() {
               </p>
               <div className="grid lg:grid-cols-2 grid-cols-1  place-items-center lg:place-items-start w-full mt-2 mx-auto lg:mt-3 text-[#84CC16]">
                 <h2 className="text-lg text-[#84CC16] text-left lg:text-2xl mt-2 p-2">
-                $ 80.50
+                  $ 80.50
                 </h2>
                 <button className="bg-[#84CC16] text-white rounded-lg lg:text-xl text-lg p-2 mt-2">
                   Add to cart
@@ -207,8 +212,10 @@ function Content() {
               </div>
             </div>
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
-              <img className="" src="\images\44.png" />
-              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">Clothing & Accesories</h1>
+              <Image src="/images/44.png" alt="l" width={500} height={500} />
+              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">
+                Clothing & Accesories
+              </h1>
 
               <h1 className="font-bold text-[#0F172A] lg:text-[24px] text-lg text-center">
                 Leather bag
@@ -219,13 +226,13 @@ function Content() {
                 <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
-              </div> 
+              </div>
               <p className="mt-2 text-[#0F172A] lg:text-[16px] text-sm lg:text-left text-center">
                 Looking venture justice in evident in totally he do ability.
               </p>
               <div className="grid lg:grid-cols-2 grid-cols-1 lg:mt-3 place-items-center lg:place-items-start w-full  mx-auto mt-2 lg;mt-3 text-[#84CC16]">
                 <h2 className="text-lg text-[#84CC16] text-left lg:text-2xl mt-2 p-2 ">
-                $ 12.59
+                  $ 12.59
                 </h2>
                 <button className="bg-[#84CC16] text-white rounded-lg lg:text-xl text-lg p-2 mt-2 ">
                   Add to cart
@@ -233,8 +240,10 @@ function Content() {
               </div>
             </div>
             <div className="flex flex-col items-center cursor-pointer md:items-start bg-white w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out duration-300">
-              <img className="" src="\images\55.png" />
-              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">Clothing & Accesories</h1>
+              <Image src="/images/55.png" alt="l" width={500} height={500} />
+              <h1 className="mt-2 text-[#0F172A] text-center lg:text-left text-sm lg:text-lg">
+                Clothing & Accesories
+              </h1>
               <h1 className="font-bold text-[#0F172A] lg:text-[24px] text-lg text-center">
                 Velvet slippers
               </h1>
@@ -287,13 +296,12 @@ function Content() {
                     strong zarathustra noble disgust suicide convictions. Moral
                     prejudice ultimate
                   </p>
-                  </div>
-                  <div className="mt-4 lg:ml-20 lg:pb-5 pb-12 p-3">
-                    <button className="mt-4 w-full py-[10px] lg:w-1/2 bg-[#84CC16] border-[#84CC16] border-4 rounded-lg text-[#FFFFFF] lg:text-lg">
-                      Learn More
-                    </button>
-                  </div>
-                
+                </div>
+                <div className="mt-4 lg:ml-20 lg:pb-5 pb-12 p-3">
+                  <button className="mt-4 w-full py-[10px] lg:w-1/3 bg-[#84CC16] border-[#84CC16] border-4 rounded-lg text-[#FFFFFF] lg:text-lg">
+                    Learn More
+                  </button>
+                </div>
               </div>
               <div className="hidden lg:flex mt-4 lg:mt-0 mx-auto   h-full order-1  lg:order-2 w-1/2   ">
                 <img
