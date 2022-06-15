@@ -5,6 +5,7 @@ import { HiX } from "react-icons/hi";
 import { Drawer } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Menu, Space } from "antd";
+import Link from "next/link";
 
 function Navigations() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -44,50 +45,32 @@ function Navigations() {
           >
             a<span className="text-[#84cc16]">mtica</span>
           </h1>
-          <nav className="flex justify-center">
-            <ul className="hidden lg:flex justify-center text-[#9CA3AF]">
-              <li className="mx-4 my-6 md:my-0">
+
+          <ul className="flex text-white ">
+            <li className="mx-4 my-6 md:my-0">
+              <Link href="/">
                 <a
                   href="#"
                   className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
                 >
                   SERVICES
                 </a>
-              </li>
-              <li className="mx-4 my-6 md:my-0">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#84CC16]duration-500 text-[#9CA3AF] hover:text-[#84CC16] duration-500"
-                >
-                  PRODUCTS
-                </a>
-              </li>
-              <li className="mx-4 my-6 md:my-0">
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0">
+              <Link href="/">
                 <a
                   href="#"
                   className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
                 >
-                  JOBS
+                  SERVICES
                 </a>
-              </li>
-              <li className="mx-4 my-6 md:my-0">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
-                >
-                  ABOUT
-                </a>
-              </li>
-              <li className="mx-4 my-6 md:my-0">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#84CC16] duration-500 text-[#9CA3AF]"
-                >
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </nav>
+              </Link>
+            </li>
+
+          
+          </ul>
+
           <div className="hidden lg:flex mp-4">
             <a
               href="#"
@@ -118,66 +101,41 @@ function Navigations() {
             onClose={handleToggle}
             extra={<img className=" justify-center" src="/images/logo.png" />}
           >
-            <div className="grid text-xl place-items-center ">
-              {/* <ul className="mt-4 lg:hidden font-bold text-gray-600">
+            {/* <div className="grid text-xl place-items-center ">
+       
+              <ul className="mt-4 lg:hidden font-bold text-gray-600">
                 <li className="mt-1">
-                  <Link href="/">
-                    <a className="py-2" href="">
-                      SERVICES
-                    </a>
-                  </Link>
-                </li>
-                <li className="mt-1">
-                  <Link href="/">
-                    <a className="py-2" href="">
-                      {" "}
-                      PRODUCTS
-                    </a>
-                  </Link>
-                </li>
-                <li className="mt-1">
-                  <Link href="/">
-                    <a className="py-2" href="">
-                      {" "}
-                      JOBS
-                    </a>
-                  </Link>
-                </li>
-                <li className="mt-1">
-                  <Link href="/">
-                    <a className="py-2" href="">
-                      {" "}
-                      ABOUT
-                    </a>
-                  </Link>
-                </li>
-                <li className="mt-1">
-                  <Link href="/">
-                    <a className="py-2" href="">
-                      {" "}
-                      FAQ
-                    </a>
-                  </Link>
-                </li>
-              </ul> */}
-               <ul>
-      <li>
+                  <li>
         <Link href="/">
-          <a>Home</a>
+          <a className="py-2" href="">SERVICES</a>
         </Link>
       </li>
-      <li>
-        <Link href="/about">
-          <a>About Us</a>
+                </li>
+                <li className="mt-1">
+                <Link href="/">
+          <a className="py-2" href=""> PRODUCTS</a>
         </Link>
-      </li>
-      <li>
-        <Link href="/blog/hello-world">
-          <a>Blog Post</a>
+                  
+                </li>
+                <li className="mt-1">
+                <Link href="/">
+          <a className="py-2" href="">  JOBS</a>
         </Link>
-      </li>
-    </ul>
-            </div>
+                  
+                </li>
+                <li className="mt-1">
+                <Link href="/">
+          <a className="py-2" href="">  ABOUT</a>
+        </Link>
+                  
+                </li>
+                <li className="mt-1">
+                <Link href="/">
+          <a className="py-2" href="">  F</a>
+        </Link>
+                </li>
+              </ul>
+            </div> */}
           </Drawer>
         </header>
       </section>
