@@ -121,13 +121,13 @@ function Navigations() {
             <div className="grid text-xl place-items-center ">
               <ul className="mt-4 lg:hidden font-bold text-gray-600">
                 <li className="mt-1">
-                  <li>
+                  
                     <Link href="/">
                       <a className="py-2" href="">
                         SERVICES
                       </a>
                     </Link>
-                  </li>
+              
                 </li>
                 <li className="mt-1">
                   <Link href="/">
